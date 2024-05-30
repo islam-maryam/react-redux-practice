@@ -1,7 +1,10 @@
 import { combineReducers } from "redux";
 import taskReucer from "./TaskReducer";
- const rootReducer = combineReducers({
+import cartReducer from "./CartReducer";
+
+const rootReducer = combineReducers({
   task: taskReucer,
+  cart: cartReducer
 });
 
 export default rootReducer;
